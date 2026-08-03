@@ -58,7 +58,9 @@ export const modeInstance = {
     // We should not be.
     id,
     routeName: 'viewer',
-    displayName: i18n.t('Modes:Basic Viewer'),
+    // Fanoni: surface as Advanced Viewer (clinical hanging-protocol mode).
+    // Upstream OHIF labels this route "Basic Viewer"; EHR Open deep-links here.
+    displayName: i18n.t('Modes:Advanced Viewer'),
     routes: [
       longitudinalRoute
     ],
